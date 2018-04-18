@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>CR Voting</title>
+<style>
+body{
+color: blue;
+text-align: center;
+}
+.button {
+    background-color: lightblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+</style>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        
+    }
+} 
+
+
+
+
+</script>
+</head>
+<body>
+<form action="login.php" method="POST" onsubmit="return validateForm()">
+<br /><br /><br />
+
+<div style="background-color:lightblue">
+<center>
+USER_ID:<input type="text" name="id_num" placeholder="Enter userid" required>
+<br />
+PASSWORD:<input type="password" name="password" placeholder="Enter password" required>
+<br />
+</div></center>
+<center><button class="button"><input type="submit" name="LOGIN" value="LOGIN"></button></center>
+<br/>
+
+</form>
+</form>
+</body>
+</html>
